@@ -5,8 +5,7 @@ public interface PCI {
 // 显卡
 class Graphics implements PCI {
 
-    public void start() {
-        System.out.println("显卡已开启");
+    public void start() { System.out.println("显卡已开启");
     }
 
     public void stop() {
@@ -32,8 +31,7 @@ class SoundCard implements PCI {
         System.out.println("声卡已开启");
     }
 
-    public void stop() {
-        System.out.println("声卡已停止");
+    public void stop() { System.out.println("声卡已停止");
     }
 
 }
@@ -66,10 +64,10 @@ class Computer {
         }
         System.out.println("电脑开机成功");
     }
-    public void turnOff() { // 电脑的开机功能
+    public void turnOff() { // 电脑的关机功能
         for (int i = 0; i < pciArr.length; i++) { // 循环遍历所有插槽
             if (pciArr[i] != null) { // 如果发现有设备
-                pciArr[i].stop(); // 将PCI设备启动
+                pciArr[i].stop(); // 将PCI设备关闭
             }
         }
         System.out.println("电脑关机成功");
