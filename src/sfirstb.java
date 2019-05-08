@@ -1,6 +1,6 @@
 public class sfirstb {
     public static void main(String[] args) {
-        StringBuffer sbn = new StringBuffer("hellow world and happy new year");
+        StringBuffer sbn = new StringBuffer("Hello world and happy new year");
         StringBuffer ss = new StringBuffer("");
         String s = sbn.toString();
         String[] sb = s.split(" ");
